@@ -8,14 +8,7 @@
 
 // export default Login
 
-// width: 993px;
-// height: 888px;
-// top: 95.37px;
-// left: 463px;
-// gap: 0px;
-// border-radius: 20px 0px 0px 0px;
-// border: 1px 0px 0px 0px;
-// opacity: 0.6px;
+
 
 
 import React from 'react';
@@ -29,22 +22,22 @@ const LoginForm = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       
-      <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md">
+      <div className="w-full max-w-md px-16 py-14 bg-white rounded-lg shadow-md">
         {/* <PVSIcon className="w-5 h-5 text-gray-400 absolute left-3 top-3"/> */}
 
-        <div className="flex items-center justify-center h-full">
+        <div className="flex items-center justify-center h-full hover:scale-105 duration-300 ease-in-out">
           <img src={pvsIcon} alt="PVSIcon" className="h-10" />
         </div>
 
 
-        <h2 className="text-lg font-bold text-center text-gray-800 mt-7">Login Your Account</h2>
+        <h2 className="text-lg font-bold text-center text-gray-800 mt-7 hover:scale-95 duration-300 ease-in-out">Login Your Account</h2>
 
-        <h3 className="text-sm text-center text-gray-500 pb-6">Lorem Ipsum is simply dummy text of the printing.</h3>
+        <h3 className="text-sm text-center text-gray-500 pb-6 hover:scale-95 duration-300 ease-in-out">Lorem Ipsum is simply dummy text of the printing.</h3>
 
         <form className="space-y-4">
 
           {/* Email Field */}
-       <div className="relative flex gap-x-3">
+       <div className="relative flex gap-x-3 shadow-lg p-4 rounded-lg bg-white border border-3xl hover:scale-95 duration-300 ease-in-out">
   {/* Icon Container */}
   <div className="flex items-center justify-center px-2 rounded-lg bg-gradient-to-t from-[#CAF1F2] to-[#F1FEFF]">
     <img src={emailIcon} alt="PVSIcon" className="w-6" />
@@ -67,7 +60,7 @@ const LoginForm = () => {
 
           {/* Password Field */}
 
-          <div className="relative flex gap-x-3">
+          <div className="relative flex gap-x-3 shadow-lg p-4 rounded-lg bg-white border border-3xl hover:scale-95 duration-300 ease-in-out">
   {/* Icon Container */}
   <div className="flex items-center justify-center px-2 rounded-lg bg-gradient-to-t from-[#CAF1F2] to-[#F1FEFF]">
     <img src={lockIcon} alt="PVSIcon" className="w-6" />
@@ -91,7 +84,7 @@ const LoginForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full p-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring focus:ring-blue-300 focus:outline-none"
+            className="w-full p-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring focus:ring-blue-300 focus:outline-none hover:scale-95 duration-300 ease-in-out"
           >
             Login
           </button>
