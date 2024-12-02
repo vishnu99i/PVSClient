@@ -37,45 +37,57 @@ const LoginForm = () => {
         </div>
 
 
-        <h2 className="text-lg font-bold text-center text-gray-800 mt-5">Login Your Account</h2>
+        <h2 className="text-lg font-bold text-center text-gray-800 mt-7">Login Your Account</h2>
 
-        <h3 className="text-sm text-center text-gray-800 pb-5">Lorem Ipsum is simply dummy text of the printing.</h3>
+        <h3 className="text-sm text-center text-gray-500 pb-6">Lorem Ipsum is simply dummy text of the printing.</h3>
 
         <form className="space-y-4">
+
           {/* Email Field */}
-          <div className="relative">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-              Email
-            </label>
-            <div className="flex items-center">
-              <img src={emailIcon} alt="PVSIcon" />
-              <input
-                id="email"
-                type="email"
-                required
-                className="w-full pl-10 p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none"
-                placeholder="Enter your email"
-              />
-            </div>
-          </div>
+       <div className="relative flex gap-x-3">
+  {/* Icon Container */}
+  <div className="flex items-center justify-center px-2 rounded-lg bg-gradient-to-t from-[#CAF1F2] to-[#F1FEFF]">
+    <img src={emailIcon} alt="PVSIcon" className="w-6" />
+  </div>
+  {/* Input Container */}
+  <div className="flex-1">
+    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+      Email ID
+    </label>
+    <input
+      id="email"
+      type="email"
+      required
+      className="w-full px-4 py-1 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none text-sm"
+      placeholder="Enter Email ID"
+    />
+  </div>
+</div>
+
 
           {/* Password Field */}
-          <div className="relative">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-              Password
-            </label>
-            <div className="flex items-center">
-              <img src={lockIcon} alt="PVSIcon" />
-              <input
-                id="password"
-                type="password"
-                required
-                className="w-full pl-10 p-3 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none"
-                placeholder="Enter your password"
-              />
-            </div>
-          </div>
 
+          <div className="relative flex gap-x-3">
+  {/* Icon Container */}
+  <div className="flex items-center justify-center px-2 rounded-lg bg-gradient-to-t from-[#CAF1F2] to-[#F1FEFF]">
+    <img src={lockIcon} alt="PVSIcon" className="w-6" />
+  </div>
+  {/* Input Container */}
+  <div className="flex-1">
+    <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+      Password
+    </label>
+    <input
+      id="password"
+      type="password"
+      required
+      className="w-full px-4 py-1 border rounded-lg focus:ring focus:ring-blue-300 focus:outline-none text-sm"
+      placeholder="Enter Password"
+    />
+  </div>
+</div>
+
+         
           {/* Submit Button */}
           <button
             type="submit"
